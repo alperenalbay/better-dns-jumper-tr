@@ -8,6 +8,7 @@ import { Lan } from "../components/icons/Lan";
 import { Server } from "./icons/Server";
 import { Activity } from "./icons/Activity";
 import { Logs } from "./icons/Logs";
+import { Test } from "./icons/Test";
 import { Update } from "./icons/Update";
 import { useUpdater } from "../hooks/useUpdater";
 import { useTranslation } from "react-i18next";
@@ -42,6 +43,12 @@ const TABS = [
         icon: <Logs className="text-xl" />,
         path: "/logs",
         tooltipKey: "logs_tab",
+    },
+    {
+        key: "benchmark",
+        icon: <Test className="text-xl" />,
+        path: "/benchmark",
+        tooltipKey: "benchmark_tab",
     },
     {
         key: "settings",

@@ -40,6 +40,7 @@
         "dns_activity_tab": "DNS sorgularını izleyin, engelleme kurallarını ve önceden tanımlı IP'leri yönetin",
         "logs_tab": "Uygulama kayıtlarını görüntüleyin — sorun giderme ve hata ayıklama için kullanışlıdır",
         "settings_tab": "Uygulama ayarları — başlangıç davranışı, test alan adı, öz yükleyici çözücü",
+        "benchmark_tab": "Kurulu uygulamalar icin DNS sunucusu kiyaslamasi",
         "clear_dns_cache": "Yerel DNS çözücü önbelleğini temizler — yeni sorguları zorunlu kılar",
         "reset_dns": "Bağdaştırıcının orijinal DNS ayarlarını geri yükler",
         "test_server": "Seçili DNS sunucusunu erişilebilirlik ve gecikme açısından test eder",

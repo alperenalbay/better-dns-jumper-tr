@@ -17,6 +17,7 @@ use tauri_plugin_store::StoreExt;
 use tauri_plugin_window_state::StateFlags;
 
 use commands::app_logs::{clear_app_logs, get_app_logs, get_log_file_path, open_log_dir};
+use commands::apps::{list_installed_apps, test_tcp_connect};
 use commands::dns::{
     clear_dns, clear_dns_cache, clear_dns_logs, delete_dns_rule, get_dns_logs, get_dns_rules,
     get_interface_dns_info, reset_dns_rules, save_dns_rule, set_dns, test_server, toggle_dns_rule,
@@ -92,6 +93,8 @@ pub fn run() {
             clear_app_logs,
             get_log_file_path,
             open_log_dir,
+            list_installed_apps,
+            test_tcp_connect,
         ])
         .manage(Mutex::new(AppState {
             dns_server: DnsServer::new(log_sender, rules.clone()),
